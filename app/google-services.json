@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "751462243354",
+    "project_id": "js-mall",
+    "storage_bucket": "js-mall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751462243354:android:0193513fbc98bcdc5885a3",
+        "android_client_info": {
+          "package_name": "com.example.vivatechassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751462243354-v1e9e6j608pijdod4altr7k7nc8an91k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-sSw_Ea2fLqoOyt_7vosapF66URpLK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751462243354-v1e9e6j608pijdod4altr7k7nc8an91k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "751462243354-p6lfqg52nqk9pgn1k74f1f8os2dcfia2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.dailynotes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
