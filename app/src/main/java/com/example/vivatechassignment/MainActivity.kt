@@ -41,12 +41,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
+            // for Android 13 or higher version of android we will ask user to grant permission to send notification.
             askNotificationPermission()
+
+            // create channel Id to send notification , only for "Orio" or higher version of android.
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
                 val channel = NotificationChannel("testingId", "testingChannel", NotificationManager.IMPORTANCE_DEFAULT)
                 val manager = getSystemService(NotificationManager::class.java)
                 manager.createNotificationChannel(channel)
             }
+
+            // user automatically subscribe to topic called "kanti", when we send notification for this topic user will received notification.
             Firebase.messaging.subscribeToTopic("kanti")
                 .addOnCompleteListener { task ->
                     var msg = "Subscribed"
